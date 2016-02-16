@@ -125,3 +125,31 @@ function isPalindrome(string){
 }
 
 isPalindrome("hello eunice")
+
+
+// Write a function that takes a book and counts how many there is of a given word
+
+function findWord(book,word){
+  var bookArray = book.split(" ")
+  var counter = 0
+  for(var i = 0; i < bookArray.length; i ++){
+    if (bookArray[i] === word){
+      counter ++
+    }
+  }
+  return counter
+}
+
+console.log(findWord("hello eunice is a coder", "eunice"))
+
+// find the max of 2 given numbers without using comparison operators
+
+function findMax(num1,num2){
+  var numArray =[]
+  numArray.push(num1)
+  numArray.push(num2)
+  numArray.sort
+  return numArray[1]
+}
+
+console.log(findMax(1,2))
